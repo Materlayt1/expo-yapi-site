@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+
+
+}
+
+.upheader {
+    background-color: #105e7d;
+    color: #aaaaaaaa;
+    opacity: 0.7;
+    font-size: 1.2rem;
+    align-items: center;
+    font-style: italic;
+
+}
+
+.social {
+    font-size: 3rem;
+    margin-top: -1rem;
+}
+
+.social-media {
+    margin-top: -0.8rem;
+    border-left: 1px solid #c5c5c5;
+    padding: 1.3rem 2rem;
+    display: flex;
+}
+
+.social-media a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+
+}
+
+.logo {
+    padding: 1rem;
+}
+
+.logo img {
+    width: 7rem;
+}
+
+.navbarr {
+    list-style: none;
+    position: absolute;
+    left: -1rem;
+    font-size: 1.5rem;
+    display: none;
+    width: 22rem;
+    background-color: #f1f1f1;
+    border: 1px solid #aaaa;
+    border-radius: 3px;
+    box-shadow: 2px 2px 6px #c5c5c5;
+    transition: all 0.5s linear;
+    z-index: 1500;
+
+}
+
+.nave {
+    margin-bottom: -0.5rem;
+    font-size: 1.9rem;
+    position: relative;
+    margin-left: 20rem;
+    z-index: 10000;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+
+    color: #0aa2de;
+    transition: all 0.4s linear;
+}
+
+.navbarr li {
+    border-bottom: 1px solid #aaaa;
+    padding: 1.5rem;
+
+    left: 0;
+    text-align: left;
+}
+
+.proje {
+    cursor: pointer;
+    position: relative;
+}
+
+.proje:hover .navbarr {
+    display: block;
+
+}
+
+.header {
+    border-bottom: 1px solid #c5c5c5;
+    box-shadow: 2px 2px 6px #c5c5c5;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-weight: 300;
+
+    background-color: #f1f1f1;
+    z-index: 10000;
+}
+
+.bar {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    font-size: 3rem;
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.images {
+    width: 100%;
+    height: 95vh;
+
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    z-index: 90;
+
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: 1.3s ease-in-out;
+}
+
+.image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    opacity: 0.4;
+    /* Adjust the opacity to your preference */
+}
+
+.actives {
+    opacity: 1;
+
+
+
+}
+
+.slide-title {
+    position: absolute;
+    width: 80%;
+    top: 45%;
+    right: 10%;
+    transform: translate(35%, 5%);
+    font-size: 2rem;
+    z-index: 1000;
+    color: white;
+}
+
+.slide-title h1 {
+    font-size: 8rem;
+}
+
+.slider {
+    position: relative;
+    height: 95vh;
+
+}
+
+.about {
+    height: 30rem;
+    background-color: #3C9FD3;
+    width: 100%;
+    color: white;
+    margin-top: 2rem;
+    position: relative;
+
+
+}
+
+.about-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.about h1 {
+    font-size: 6rem;
+}
+
+.p {
+    display: block;
+    position: relative;
+    top: 10rem;
+    left: 21rem;
+}
+
+.about-title {
+    width: 50%;
+    font-size: 1.7rem;
+}
+
+.about-title li {
+    list-style: circle;
+    padding-top: 1rem;
+}
+
+.tanitim {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    font-size: 1.7rem;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.tanitim-about {
+    width: 40%;
+
+}
+
+.tanitim-about p {
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.tanitim-about h1 {
+    display: inline-block;
+    font-size: 3rem;
+    color: #0aa2de;
+
+
+
+}
+
+.fa-clock-rotate-left {
+    display: inline-block;
+    animation: turn 4s linear infinite;
+    font-size: 4rem;
+    margin-left: 2rem;
+    color: #0aa2de;
+
+}
+
+.tanitim-video {
+    font-size: 3rem;
+    color: #0aa2de;
+    text-transform: uppercase;
+}
+
+.tanitim-head {
+    border-bottom: 5px solid #0aa2de;
+    border-radius: 5px;
+}
+
+video {
+    width: 50rem;
+}
+
+.video {
+    width: 100%;
+
+
+}
+
+.video-cont {
+    position: relative;
+    width: 100%;
+    height: 80rem;
+    margin-bottom: 2rem;
+
+}
+
+.video video {
+    width: 100%;
+    height: 79rem;
+    position: absolute;
+
+}
+
+.video:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78.5rem;
+    background-color: black;
+    z-index: 99;
+    opacity: 0.6;
+    /* Adjust the opacity to your preference */
+}
+
+.project {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../src/assets/kusadasi/kusadası8.jpg");
+    width: 80%;
+    margin: auto;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: round;
+    margin-top: 5rem;
+    height: 60rem;
+    object-fit: fill;
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 8px 8px 8px #c5c5c5;
+
+}
+
+.project-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    top: 40%;
+    right: 50%;
+    transform: translate(60%, -30%);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.icons {
+    margin-top: -2rem;
+}
+
+.icons h3 {
+    font-size: 4.5rem;
+    border-bottom: 5px solid white;
+    padding-bottom: 1rem;
+
+}
+
+.icons i {
+    font-size: 6rem;
+}
+
+.icons-container {
+    width: 100%;
+}
+
+.icon {
+    padding: 2rem;
+    text-align: center;
+}
+
+.project-title {
+    text-align: center;
+    width: 40%;
+    position: relative;
+    top: -0.5rem;
+    right: 0;
+}
+
+.project-title h1 {
+    font-size: 4.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid white;
+}
+
+.react-icon {
+    font-size: 8rem;
+
+}
+
+.project-buildd {
+    position: relative;
+    margin-top: 7rem;
+    width: 80%;
+    margin: auto;
+}
+
+.project-build-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.8rem;
+}
+
+.card {
+    width: 80%;
+    border: 1px solid #3C9FD3;
+    box-shadow: 1px 1px 6px #0aa2de;
+    margin: auto;
+    position: relative;
+}
+
+.card-img img {
+    width: 100%;
+    height: 30rem;
+    display: block;
+    margin: auto;
+}
+
+.card-header {
+    font-size: 4rem;
+    color: #0aa2de;
+}
+
+.card-hover {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    font-size: 2.2rem;
+    display: none;
+    animation: up 0.3s linear;
+    z-index: 1000;
+
+}
+
+.card-hoverer {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    width: 100%;
+    font-size: 2.2rem;
+    display: none;
+    animation: up 0.3s linear;
+    z-index: 1000;
+
+}
+
+.card-hover i {
+    color: white;
+}
+
+.card-title {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.a {
+    text-decoration: none;
+}
+
+.card:hover .card-hover {
+    display: block;
+}
+
+.card:hover .card-hoverr {
+    display: block;
+    transition: 0.5s ease-in;
+}
+
+.card:hover .card-hoverer {
+    display: block;
+}
+
+.card-hoverr {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82%;
+    background-color: black;
+    z-index: 99;
+    opacity: 0.6;
+    transition: up 0.8s linear;
+    display: none;
+
+
+}
+
+.card-title:hover {
+    opacity: 0.5;
+    transition: 0.5s linear;
+}
+
+.footer {
+    background-color: #3C9FD3;
+    display: flex;
+    position: relative;
+    
+}
+
+iframe {
+    width: 80rem;
+    height: 45rem;
+}
+
+.contact {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    margin-top: 3rem;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.phone {
+    margin-top: 4rem;
+}
+
+.sub-footer {
+    bottom: 0;
+    width: 100%;
+    ;
+    background-color: #c5c5c5c5;
+    border-top: 1px solid white;
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+}
+
+.cesme {
+    position: relative;
+    height: 150vh;
+}
+
+.sub-footerr {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    ;
+    background-color: #c5c5c5c5;
+    border-top: 1px solid white;
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+}
+
+.cesme-header {
+    font-size: 3rem;
+    color: #0aa2de;
+}
+
+.wp {
+    z-index: 1000;
+    padding: 1rem;
+    background-color: #25d366;
+    color: white;
+    font-size: 5rem;
+    border-radius: 100%;
+    position: fixed;
+    top: 85%;
+    right: 0;
+
+}
+
+.App {
+    position: relative;
+}
+
+.about-us-header {
+    font-size: 3rem;
+    color: #0aa2de;
+    text-align: center;
+}
+
+.about-us-title {
+    font-size: 1.8rem;
+    width: 50%;
+    margin: auto;
+
+}
+
+.about-us {
+    position: relative;
+    min-height: 110vh;
+}
+
+.about-us img {
+    width: 40rem;
+}
+
+.sub-footerrr {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    ;
+    background-color: #c5c5c5c5;
+
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.news-img img{
+    width: 30%;
+}
+.basınn{
+    font-size: 3rem;
+    color: #0aa2de;
+}
+.basın{
+    text-align: center;
+}
+
+
+
+@keyframes turn {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translate(-3rem);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 7px;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .navbarr {
+        border: none;
+        font-size: 1.2rem;
+
+
+    }
+
+    .naver {
+        display: none;
+
+
+    }
+
+    .nav {
+        margin-left: 8rem;
+    }
+
+    .nav li {
+        padding: 2rem;
+    }
+
+    .social-media {
+        display: none;
+        border: none;
+    }
+
+    .header-container {
+        display: block;
+    }
+
+    .slide-title {
+
+        top: 20%;
+        right: 28%;
+        transform: translate(35%, 35%);
+
+    }
+
+    .about {
+        height: 40rem;
+        text-align: center;
+        margin-top: -5rem;
+    }
+
+    .about-container {
+        display: block;
+
+    }
+
+    .p {
+        display: none;
+    }
+
+    .about-title {
+        width: 90%;
+        margin: auto;
+    }
+
+    .tanitim {
+        display: block;
+    }
+
+    .tanitim-about {
+        width: 100%;
+    }
+
+    .video-cont {
+        position: relative;
+        width: 100%;
+        height: 40rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .video {
+        position: absolute;
+    }
+
+    .video video {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 1px;
+
+    }
+
+    .video:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+
+        opacity: 0.6;
+        /* Adjust the opacity to your preference */
+    }
+
+    .project-container {
+        display: block;
+        text-align: center;
+        top: 50%;
+        left: 40%;
+        font-size: 2rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+        width: 100%;
+        top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .icons {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .project {
+        height: 70rem;
+        width: 100%;
+    }
+
+    .react-icon {
+        font-size: 3rem;
+        border-radius: 1px;
+
+    }
+
+    .project-title h1 {
+        font-size: 3.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid white;
+    }
+
+    .icons h3 {
+        font-size: 3.5rem;
+        border-bottom: 2px solid white;
+        padding-bottom: 1rem;
+
+    }
+
+    .icons i {
+        font-size: 2.2rem;
+
+    }
+
+    .icon {
+        padding: 1rem;
+    }
+
+    .project-build-container {
+        display: block;
+
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 45rem;
+    }
+
+    .contact {
+        position: relative;
+        display: block;
+        width: 100%;
+        top: 0;
+        left: 0;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .about-us-container {
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .about-us-container img{
+        width: 20rem;
+    }
+    .about-us {
+        position: relative;
+        height: 230vh;
+    }
+
+}
