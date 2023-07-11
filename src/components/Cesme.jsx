@@ -14,6 +14,7 @@ import Img9 from '../assets/çeşme/cesmedıs1.jpg';
 import Img10 from '../assets/çeşme/cesmedıs2.jpg';
 import Img11 from '../assets/çeşme/cesmedıs3.jpg';
 import Img12 from '../assets/çeşme/cesmedıs4.jpg';
+import { Fade, Slide } from 'react-reveal';
 
 const Cesme = () => {
   const images = [
@@ -69,11 +70,10 @@ const Cesme = () => {
 
   return (
     <div className="cesme">
+      <Slide left> <Fade>
       <h1 className="text-center my-5 cesme-header">ÇEŞME VİLLALARI</h1>
       <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} />
-      <div className="sub-footerr">
-        <p className="footer-bottom">&copy; 2023 Expo Yapi. Tüm hakları saklıdır.</p>
-      </div>
+      </Fade></Slide>
     </div>
   );
 };
