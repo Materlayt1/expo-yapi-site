@@ -16,7 +16,9 @@ body {
 
 
 }
-
+.App{
+    width: 100%;
+}
 
 .upheader {
     background-color: #105e7d;
@@ -177,8 +179,9 @@ body {
 .slide-title {
     position: absolute;
     width: 80%;
+    margin: auto;
     top: 45%;
-    right: 10%;
+    right: 14%;
     transform: translate(35%, 5%);
     font-size: 2rem;
     z-index: 1000;
@@ -186,7 +189,7 @@ body {
 }
 
 .slide-title h1 {
-    font-size: 8rem;
+    font-size: 10rem;
 }
 
 .slider {
@@ -224,7 +227,7 @@ body {
 .p {
     display: block;
     position: relative;
-    top: 11rem;
+    top: 9rem;
     left: 21rem;
     font-size: 1.8rem;
 }
@@ -604,10 +607,12 @@ iframe {
     font-size: 3rem;
     color: #0aa2de;
     text-align: center;
+ 
 }
 
 .about-us-title {
     font-size: 1.8rem;
+    height: 110vh;
     width: 50%;
     margin: auto;
 
@@ -615,20 +620,20 @@ iframe {
 
 .about-us {
     position: relative;
-    min-height: 110vh;
+    height: 110vh;
 }
 
 .about-us img {
     width: 40rem;
+    position: relative;
+    top: -20rem;
 }
 
 .sub-footerrr {
     position: absolute;
     bottom: 0;
     width: 100%;
-    ;
     background-color: #c5c5c5c5;
-
     font-size: 1.3rem;
     color: white;
     text-align: center;
@@ -696,8 +701,19 @@ iframe {
     .navbarr {
         border: none;
         font-size: 1.2rem;
+        margin: auto;
+        left: 13rem;
 
 
+    }
+    .about-us{
+        height: 120vh;
+    }
+    .phone{
+      margin-top: 3rem;
+    }
+    .contact{
+        font-size: 2rem;
     }
 
     .naver {
@@ -705,13 +721,16 @@ iframe {
 
 
     }
-
-    .nav {
-        margin-left: -5rem;
+    .proje{
+        position: relative;
     }
+
+  
 
     .nave {
         width: 100%;
+        margin: auto;
+        text-align: center;
     }
 
     .nav li {
@@ -730,10 +749,7 @@ iframe {
     .slide-title {
         font-size: 2rem;
         width: 100%;
-        top: 13%;
-        right: 10%;
-
-
+        right:  10%;
 
     }
 
@@ -742,9 +758,9 @@ iframe {
     }
 
     .about {
-        height: 50rem;
+        height: 40rem;
         text-align: center;
-        margin-top: -50rem;
+        
     }
 
     .about-container {
@@ -780,7 +796,7 @@ iframe {
     .video-cont {
         position: relative;
         width: 100%;
-        height: 80rem;
+        height: 25rem;
         margin-bottom: 2rem;
 
     }
@@ -795,6 +811,11 @@ iframe {
         position: relative;
         top: 1px;
 
+    }
+    .project-slide{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .video:before {
@@ -825,6 +846,10 @@ iframe {
         top: 0;
         margin-bottom: 2rem;
     }
+    .about-us img {
+        
+        top: -43rem;
+    }
 
     .icons {
         text-align: center;
@@ -832,13 +857,15 @@ iframe {
     }
 
     .project {
-        height: 70rem;
+        
         width: 100%;
     }
 
     .react-icon {
-        font-size: 3rem;
+        font-size: 7rem;
         border-radius: 1px;
+        margin-top: 2rem;
+
 
     }
 
@@ -856,17 +883,24 @@ iframe {
     }
 
     .icons i {
-        font-size: 2.2rem;
+        font-size: 6rem;
 
     }
 
     .icon {
         padding: 1rem;
+        margin-top: 2rem;
     }
 
     .project-build-container {
         display: block;
 
+    }
+    .icons-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        margin-bottom: 5rem;
     }
 
     .card {
@@ -900,26 +934,28 @@ iframe {
         width: 100%;
         margin: auto;
         text-align: center;
+        height: 130vh;
     }
 
     .about-us-container img {
         width: 20rem;
+
     }
 
     .about-us {
         position: relative;
-        height: 150vh;
+       
     }
 
     .about-us-title {
         width: 90%;
     }
-
+   
 }
 
 @media screen and (max-width: 1200px) and (min-width: 501px) {
     html {
-        font-size: 9px;
+        font-size: 15px;
     }
 
     .active {
@@ -933,7 +969,7 @@ iframe {
     .navbarr {
         border: none;
         font-size: 1.2rem;
-
+        margin-left: 12rem;
 
     }
 
@@ -945,7 +981,11 @@ iframe {
 
     .nav {
         margin-left: 3rem;
-        text-align: left;
+     
+
+    }
+    .proje{
+        position: relative;
     }
 
     .nave {
@@ -955,6 +995,13 @@ iframe {
     .nav li {
         padding: 2rem;
     }
+    
+    .nave {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
 
     .social-media {
         display: none;
@@ -966,23 +1013,24 @@ iframe {
     }
 
     .slide-title {
-        font-size: 2rem;
+        font-size: 1rem;
         width: 100%;
-        top: 20%;
-        right: 13%;
+        right:  20%;
+        top: 30%;
+       
 
 
 
     }
 
     .slide-title h1 {
-        font-size: 10rem;
+        font-size: 8rem;
     }
 
     .about {
         height: 40rem;
         text-align: center;
-        margin-top: -20rem;
+       
     }
 
     .about-container {
@@ -1015,7 +1063,7 @@ iframe {
     .video-cont {
         position: relative;
         width: 100%;
-        height: 80rem;
+        height: 32rem;
         margin-bottom: 2rem;
 
     }
@@ -1143,7 +1191,7 @@ iframe {
 
     .about-us {
         position: relative;
-        height: 150vh;
+        height: 120vh;
     }
 
     .about-us-title {
