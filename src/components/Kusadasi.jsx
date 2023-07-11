@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
-
+import { Fade, Slide } from 'react-reveal';
 import Img1 from '../assets/kusadasi/kusadası.jpg';
 import Img2 from '../assets/kusadasi/kusadasi2.jpg';
 import Img3 from '../assets/kusadasi/kusadasi3.jpg';
@@ -52,11 +52,12 @@ const Cesme = () => {
 
   return (
     <div className="cesme">
+      <Slide right> <Fade>
       <h1 className="text-center my-5 cesme-header">KUŞADASI VİLLALARI</h1>
       <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} />
       <div className="sub-footerr">
         <p className="footer-bottom">&copy; 2023 Expo Yapi. Tüm hakları saklıdır.</p>
-      </div>
+      </div></Fade></Slide>
     </div>
   );
 };
