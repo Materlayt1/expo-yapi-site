@@ -1,9 +1,11 @@
 import React from 'react'
 import Logo from "../assets/logo.jpg"
+import { Fade, Slide } from 'react-reveal';
 
 const About = () => {
     return (
         <div className=' about-us mt-5'>
+            <Slide right>  <Fade>
             <div className="  about-us-container">
 
 
@@ -18,9 +20,7 @@ Profesyonel ve deneyimli bir ekibe sahibiz. Expo Yapı olarak, mühendisler, mim
                 </div>
                 <div className="about-img"><img src={Logo} alt="" /></div>
             </div>
-            <div className="sub-footerrr">
-                <p className="footer-bottom">&copy; 2023 Expo Yapi. Tüm hakları saklıdır.</p>
-            </div>
+            </Fade></Slide>
         </div>
     )
 }
